@@ -1,0 +1,46 @@
+id: business-group-oauth-token-validation-policy
+name: business-group-oauth-token-validation-policy
+description: OAuth token validation policy for multiple Business Groups in Anypoint Platform Organization
+category: Custom
+type: custom
+resourceLevelSupported: true
+encryptionSupported: false
+standalone: true
+requiredCharacteristics: []
+providedCharacteristics: []
+configuration: 
+  - propertyName: introspectionEndpoint
+    name: Introspection Endpoint
+    description: Introspection Endpoint of your identity provider. This endpoint is used to validate the access token.
+    type: string
+    allowMultiple: false
+    defaultValue: 
+    optional: false
+    sensitive: false
+
+  - propertyName: introspectionClientId
+    name: Introspection Client Id
+    description: Introspection Client Id. This credential is used validate the access token.
+    type: string
+    allowMultiple: false
+    defaultValue: 
+    optional: false
+    sensitive: false
+ 
+  - propertyName: introspectionClientSecret
+    name: Introspection Client Secret
+    description: Introspection Client Secret. This credential is used validate the access token.
+    type: string
+    allowMultiple: false
+    defaultValue: 
+    optional: false
+    sensitive: true
+ 
+  - propertyName: scopes
+    name: scopes
+    description: A space-separated list of supported scopes
+    type: string
+    allowMultiple: false
+    defaultValue: 
+    optional: true
+    sensitive: false
