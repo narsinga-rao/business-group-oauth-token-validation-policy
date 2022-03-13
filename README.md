@@ -6,6 +6,8 @@ This example is implemeted based on the below blog post.
 
 https://platform.deloitte.com.au/articles/oauth-for-your-business-group-in-anypoint-platform
 
+**Note:** To build and deploy this example, you must have MuleSoft Enterprise nexus repository credentils to be configured in ***'.m2/settings.xml'*** file.
+
 #### Mulesoft resources
 
 Custom Policies
